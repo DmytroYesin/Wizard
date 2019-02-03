@@ -2,7 +2,6 @@ import React from 'react';
 import { store } from './../store';
 import { Accordion, Checkbox, Icon } from 'semantic-ui-react';
 
-
 export class DiscoveryOptions extends React.Component {
   constructor(props) {
     super(props);

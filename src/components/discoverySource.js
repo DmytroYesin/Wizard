@@ -6,7 +6,6 @@ import { IpRange } from './ipRange';
 import { CSV } from './CSV';
 import { connect } from 'react-redux';
 
-
 const options = [
   { key: 1, text: 'IP', value: 'IP' },
   { key: 2, text: 'IP Range', value: 'IP Range' },

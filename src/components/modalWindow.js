@@ -1,5 +1,4 @@
 import React from 'react';
-// import { store } from './../store';
 import { connect } from 'react-redux';
 import { Modal, Button } from 'semantic-ui-react'
 

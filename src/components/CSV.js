@@ -2,17 +2,15 @@ import React from 'react';
 import { store } from './../store';
 import { Input } from 'semantic-ui-react';
 
-
 export class CSV extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       path: '',
     };
-    this.handleOnChange = this.handleOnChange.bind(this);
   }
 
-  handleOnChange(e) {
+  handleOnChange = (e) => {
       this.setState({path: e });
       store.dispatch({type: 'SELECTED_FILE', payload: e});
       store.dispatch({type: 'STEP', payload: 1});

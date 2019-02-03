@@ -153,13 +153,15 @@ body {
   background-color: inherit !important;
   color: white !important;
   position: absolute;
-  left: 29%;
+  left: calc(50% - 47px);
   z-index: 0;
+  padding-left: 8px !important;
+  padding-right:  8px !important;
   font-size: 1.1rem !important;
 }
 .upload_container{
   background-color: #39D2B4;
-  width: 50%;
+  width: 60%;
 }
 .selected_file {
   color: white;

@@ -1,21 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import { store } from './../store';
 import { Step } from 'semantic-ui-react';
 
 let step = ['disabled', 'disabled', 'disabled', 'disabled'];
 
 class StepsVueComponent extends React.Component {
-
-
-
-  // handleStep = () => {
-  //   const { Step } = this.props;
-  //   this.setState({ step1: Step });
-  //   console.log('updated ' + Step);
-  //
-  // //  this.setState({ activeIndex: newIndex })
-  // }
 
   render() {
     let lvl = this.props.Step;

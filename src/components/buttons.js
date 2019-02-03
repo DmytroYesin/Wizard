@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { Button } from 'semantic-ui-react';
 import { ModalWindow } from './modalWindow';
 
-
 export class ButtonsComponent extends React.Component {
 
   onClear = () => {

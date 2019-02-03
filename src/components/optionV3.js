@@ -52,7 +52,7 @@ export class OptionV3Component extends React.Component {
 
   handleOnChange = (e, type) => {
     store.dispatch({type: type, payload: e});
-    setTimeout(this.handleValidation(e), 10);
+    this.handleValidation(e);
   }
 
   handleChangeDropdown = (e, { value }) => {
@@ -61,7 +61,6 @@ export class OptionV3Component extends React.Component {
   }
 
   render() {
-    // this.handleValidation();
       return (
             <div>
               <div className='text_label'>Read Community</div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-// import { store } from './store';
 import { DiscoverySource } from './components/discoverySource';
 import { DiscoveryOptions } from './components/discoveryOption';
 import { SelectedOptions } from './components/selectedOptions';
@@ -32,4 +31,3 @@ export const App = connect(
   }),
   dispatch => ({})
 )(AppComponent);
-// export default App;

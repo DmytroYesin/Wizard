@@ -60,10 +60,3 @@ function changeStr(state, action) {
   }
 }
 export const store = createStore(changeStr, initialState);
-
-// store.subscribe(() => console.log(store.getState()))
-
-// handleChange = (e, { value }) => {
-//   this.setState({ value });
-//   store.dispatch({type: 'VERSION', payload: value });
-// }

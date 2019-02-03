@@ -1,5 +1,4 @@
 import React from 'react';
-// import { store } from './../store';
 import { Accordion, Icon } from 'semantic-ui-react';
 import { SNMPOption } from './SNMPOption';
 import { connect } from 'react-redux';
