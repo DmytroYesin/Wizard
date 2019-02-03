@@ -1,14 +1,193 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #1F262E;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.container{
+  min-height: 68px;
+  padding: 16px 3% 16px 3%;
+}
+
+.flex_div {
+  display: flex;
+}
+
+.display_non {
+  display: none !important;
+}
+
+.steps {
+  padding: 12px 10% 12px 10%;
+}
+.step_style {
+  border-radius: 0 !important;
+  border-right: 0 !important;
+  background-color: #1F262E !important;
+  color: #5BB85D !important;
+  border-bottom: solid 2px #5BB85D !important;
+}
+.step_style::after {
+  color: black;
+  background-color: #5BB85D !important;
+  padding-left: 1px;
+  padding-top: 1.5px;
+  height: 20px !important;
+  width: 20px !important;
+  top: calc(100% - 9px) !important;
+  right: calc(50% - 10px) !important;
+  border-radius: 50%;
+  transform: none !important;
+  text-align: center;
+}
+.step.one.step_style::after{
+  content: '1';
+}
+.step.two.step_style::after{
+  content: '2';
+}
+.step.three.step_style::after{
+  content: '3';
+}
+.step.four.step_style::after{
+  content: '4';
+}
+
+.step_style.active {
+  color: white !important;
+  border-bottom: solid 2px white !important;
+}
+.step_style.active::after {
+  background-color: white !important;
+  color: black !important;
+}
+
+.step_style.disabled {
+  color: grey !important;
+  border-bottom: solid 2px grey !important;
+}
+.step_style.disabled::after {
+  background-color: grey !important;
+  color: white !important;
+}
+
+.bg {
+  background-color: #1F262E !important;
+  border: 1px solid #373f49 !important;
+  box-shadow: none !important;
+}
+
+.discovery_source_cont {
+  width: 60% !important;
+}
+.discovery_source {
+  width: 100% !important;
+}
+
+.discovery_options_cont {
+  margin-left: 8%;
+  width: 32% !important;
+}
+.discovery_options {
+  width: 100% !important;
+}
+
+.checkbox {
+  padding: 4px;
+}
+
+.selected_options {
+  width: 100% !important;
+}
+
+.text_title {
+  color: #657381 !important;
+}
+.text_title_big {
+  color: #6B8BA8 !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+}
+
+.text_white label {
+  color: white !important;
+}
+.text_label {
+  color: white;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.text_label_big {
+  color: #6B8BA8;
+  margin-top: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.input_bg input {
+  color: white !important;
+  font-weight: 700;
+  background-color: #1F262E !important;
+  border: 1px solid #373f49 !important;
+}
+
+.input_error {
+  color: #ff8080;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 15px;
+  min-height: 20px;
+}
+
+.upload_component {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.upload_input input {
+  opacity: 0;
+  width: 100% !important;
+  z-index: 999;
+}
+.upload_input div {
+  background-color: inherit !important;
+  color: white !important;
+  position: absolute;
+  left: 29%;
+  z-index: 0;
+  font-size: 1.1rem !important;
+}
+.upload_container{
+  background-color: #39D2B4;
+  width: 50%;
+}
+.selected_file {
+  color: white;
+  min-height: 20px;
+  text-align: center;
+}
+
+.radioV3 {
+  width: 33.33%;
+  text-align: center;
+}
+.radioV5 {
+  width: 20%;
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 16px;
+}
+
+.buttons {
+  width: 18%;
+}
+
+.ui .modal {
+  top: 10% !important;
+}
+
+.multi-line {
+  white-space: pre-wrap;
 }

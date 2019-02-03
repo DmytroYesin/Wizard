@@ -1,28 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { connect } from 'react-redux';
+// import { store } from './store';
+import { DiscoverySource } from './components/discoverySource';
+import { DiscoveryOptions } from './components/discoveryOption';
+import { SelectedOptions } from './components/selectedOptions';
+import { Buttons } from './components/buttons';
+import { StepsVue } from './components/stepsVue';
 
-class App extends Component {
+class AppComponent extends React.Component {
+
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      return (
+        <div className='container'>
+          <StepsVue />
+          <div className='flex_div container'>
+            <DiscoverySource />
+            { this.props.Step >= 1 ? <DiscoveryOptions /> : null }
+          </div>
+          <div className='container'>
+            { this.props.Step >= 2 ? <SelectedOptions /> : null }
+          </div>
+          <Buttons />
+        </div>
+      );
   }
 }
 
-export default App;
+export const App = connect(
+  state => ({
+    Step: state.step
+  }),
+  dispatch => ({})
+)(AppComponent);
+// export default App;
